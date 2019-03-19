@@ -1,0 +1,12 @@
+﻿@using System.IO
+@{
+    ViewData["Title"] = "Deine Mettgalerie";
+}
+<h3>@ViewData["Title"]</h3>
+
+<p>Diese Bilder sind im Verzeichnis MettPics:</p>
+
+@foreach (string fileName in ViewBag.MettPicUrls)
+{
+    <img src="@fileName" alt="Image" />
+}

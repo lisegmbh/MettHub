@@ -1,0 +1,29 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:54152/",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "API_URL": "http://localhost:59215/api",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "MettHub": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "API_URL": "http://localhost:59215/api",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:54153/"
+    }
+  }
+}

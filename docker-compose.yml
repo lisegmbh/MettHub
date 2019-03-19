@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  webapp:
+    build: "MettHub.WebApp"
+    ports:
+     - "8080:80"
+    volumes:
+     - C:\mettpics:C:\app\MettPics
+    environment:
+     - METT_CALC_ENDPOINT=http://api
+  api:
+    build: "MettHub.Api"
+
+    

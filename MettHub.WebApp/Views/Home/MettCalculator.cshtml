@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "Mett Calculator";
+}
+
+<h3>Wieviel Mett brauche ich für das Mettfrühstück?</h3>
+<br />
+
+@model MettAmountViewModel
+
+@using (Html.BeginForm("MettCalculator", "Home", FormMethod.Post)) {
+    <div>
+        Es haben @Html.EditorFor(x => x.People) Personen zugesagt.
+        <input type="submit" value="Ermitteln" />
+    </div>
+
+    <br />
+
+    <div>
+        Für <strong>@Html.DisplayFor(x => x.People) Personen</strong>
+        musst du <strong>@Html.DisplayFor(x => x.MettAmountNeeded)g</strong> Mett kaufen.
+    </div>
+}
