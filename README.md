@@ -1,3 +1,5 @@
+> :warning: **Unmaintained blog post example**: This repository contains code examples for on of our blog posts. We do not maintain or update this repository.
+
 # MettHub
 
 This is a simple demonstration of building and running ASP.NET applications in a Docker container and part of this [blog post](https://www.lise.de/blog/permalink/63/). 
